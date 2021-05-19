@@ -1,5 +1,5 @@
 # Testing dependency strictness
- This project the strictness of installing dependencies using `midgard-yarn-strict` vs `yarn`  
+ This project tests the strictness of installing dependencies using `midgard-yarn-strict` vs `yarn`  
  By strictness I mean if a workspace can use transitive dependencies/phantom dependencies  
 >**To test with yarn, run `yarn install`**  
 >**To test with midgard-yarn-strict, run `npx midgard-yarn-strict`**  
