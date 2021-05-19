@@ -31,7 +31,7 @@ The folder structure is:
 -------------------------------------------------------------------
       .store
          |__0____
-            .    |
+            .    |_____ index.js
             .    |_____ node_modules
             .    |_____ package.json
             .
@@ -40,6 +40,9 @@ The folder structure is:
       node_modules
          |_______ strictness-test -> ../../strictness-test
       testing
+          |_______ node_modules
+          |            |___________ express -> ../../.store/15/index.js
+          |            |___________ testing -> ../../testing
           |_______ index.js
           |_______ package.json
       package.json
@@ -50,5 +53,3 @@ Install time is: **0.34s**
 The result of running `node testing/index.js` is:  
   >`encodingUrl ->  Cannot find module 'encodeurl'`  
   >`express -> <project-path>/strictness-test/.store/15/index.js`
-
-# Why does this happens even though both dependencies are present every time?  

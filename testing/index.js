@@ -13,6 +13,6 @@ try{
 } catch (e) {
     express = "Cannot find module 'express'";
 }
-
+console.log('module paths -> ', module.paths);
 console.log('encodingUrl -> ',encodeUrl);
 console.log('express -> ',express);
